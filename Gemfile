@@ -10,7 +10,7 @@ gem 'importmap-rails'
 gem 'jbuilder'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.6.7'
-gem 'rails', '~> 7.0.5.1'
+gem "rails", "~> 7.0.7", ">= 7.0.7.1"
 gem 'sprockets-rails'
 gem 'stimulus-rails'
 gem 'turbo-rails'
