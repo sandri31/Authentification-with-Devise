@@ -11,12 +11,12 @@
 
           <div class="form-floating mb-3">
             <%= f.password_field :password, autocomplete: "new-password", class: "form-control rounded-3", id: "floatingPassword", placeholder: "Password", required: true %>
-            <%= f.label :password, "Mot de passe", for: "floatingPassword" %>
+            <label for="floatingPassword">Mot de passe</label>
           </div>
 
           <div class="form-floating mb-3">
             <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control rounded-3", id: "floatingPasswordConfirmation", placeholder: "Password Confirmation", required: true %>
-            <%= f.label :password_confirmation, "Confirmation du mot de passe", for: "floatingPasswordConfirmation" %>
+            <label for="floatingPasswordConfirmation">Confirmation du mot de passe</label>
           </div>
           <button class="w-100 mb-2 btn btn-lg rounded-3 btn-warning" type="submit">Changer de mot de passe</button>
         <% end %>
