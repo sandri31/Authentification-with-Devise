@@ -70,27 +70,27 @@
 
                     <%= form_for(@resource, as: @resource_name, url: registration_path(@resource_name), html: { method: :put }) do |f| %>
                       <div class="form-floating mb-3">
-                        <%= f.text_field :pseudo, autofocus: true, autocomplete: "pseudo", class: "form-control rounded-3", value: current_user.pseudo, placeholder: "Changer de pseudo (facultatif)", id: "floatingPseudo" %>
-                        <%= f.label :pseudo, "Pseudo", for: "floatingPseudo" %>
+                        <%= f.text_field :pseudo, autofocus: true, autocomplete: "pseudo", class: "form-control rounded-3", value: current_user.pseudo, placeholder: "Changer de pseudo (facultatif)" %>
+                        <label for="floatingPseudo">Pseudo</label>
                       </div>
 
                       <% unless password_disabled %>
                         <div class="form-floating mb-3 gray-background">
-                          <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control rounded-3", value: current_user.email, placeholder: "name@example.com", required: true, readonly: true, disabled: true, id: "floatingEmail" %>
-                          <%= f.label :email, "Email", for: "floatingEmail" %>
+                          <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control rounded-3", value: current_user.email, placeholder: "name@example.com", required: true, readonly: true, disabled: true %>
+                          <label for="floatingEmail">Email</label>
                         </div>
                         <div class="form-floating mb-3">
                           <%= f.password_field :password, autocomplete: "new-password", class: "form-control rounded-3", id: "floatingNewPassword", placeholder: "Nouveau mot de passe (facultatif)" %>
-                          <%= f.label :password, "Nouveau mot de passe", for: "floatingNewPassword" %>
+                          <label for="floatingNewPassword">Nouveau mot de passe</label>
                         </div>
                         <div class="form-floating mb-3">
                           <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control rounded-3", id: "floatingPasswordConfirmation", placeholder: "Confirmer le nouveau mot de passe" %>
-                          <%= f.label :password_confirmation, "Confirmation du nouveau mot de passe", for: "floatingPasswordConfirmation" %>
+                          <label for="floatingPasswordConfirmation">Confirmation du nouveau mot de passe</label>
                         </div>
                         <div id="emailHelp" class="form-text white-text">Nous avons besoin de votre mot de passe actuel pour valider vos modifications</div>
                         <div class="form-floating mb-3">
                           <%= f.password_field :current_password, autocomplete: "current-password", class: "form-control rounded-3", id: "floatingCurrentPassword", placeholder: "Mot de passe actuel" %>
-                          <%= f.label :current_password, "Mot de passe actuel", for: "floatingCurrentPassword" %>
+                          <label for="floatingCurrentPassword">Mot de passe actuel</label>
                         </div>
                       <% end %>
 
@@ -182,8 +182,8 @@
                       <label for="floatingInput">Email</label>
                     </div>
                     <div class="form-floating mb-3">
-                      <%= f.password_field :password, autocomplete: "new-password", class: "form-control rounded-3", id: "floatingPassword1", placeholder: "Password", required: true %>
-                      <label for="floatingPassword1">Mot de passe</label>
+                      <%= f.password_field :password, autocomplete: "new-password", class: "form-control rounded-3", id: "floatingPassword", placeholder: "Password", required: true %>
+                      <label for="floatingPassword">Mot de passe</label>
                     </div>
                     <div class="form-floating mb-3">
                       <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control rounded-3", id: "floatingPasswordConfirmation", placeholder: "Password Confirmation", required: true %>
